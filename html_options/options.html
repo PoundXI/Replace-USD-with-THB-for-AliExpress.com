@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>อัตราแลกเปลี่ยนที่ถูกตั้งค่าไว้ในปัจจุบันคือ <span id="currentExchangeRate"></span> บาท/USD</h3>
+	<p>
+		อัตราแลกเปลี่ยนด้านล่างนี้รับข้อมูลมาจากเว็บไซต์
+		<a id="api_url" href="" target="_blank"></a>
+		และบวกค่าความเสี่ยงอัตราแลกเปลี่ยนเข้าไปอีก 3%
+	</p>
+	<form>
+		<label>
+			<input readonly type="text" id="thb2usdExchangeRate" style="width:65px; direction:rtl; font-weight:bold;">
+			<b>บาท/USD</b> <i>(readonly)</i>.
+		</label>
+		<br><br>
+		<button id="update-button" type="button">อัปเดต</button> <b id="updateMessage">คลิกปุ่มอัปเดตเพื่อบันทึกการเปลี่ยนแปลง</b>
+	</form>
+
+	<script src="../3rdparty/jquery.min.js"></script>
+	<script src="../js/config.js"></script>
+	<script src="../js/utils.min.js"></script>
+	<script src="options.min.js"></script>
+</body>
+</html>

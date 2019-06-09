@@ -1,0 +1,10 @@
+var _thb2usdExchangeRate = 33.0;
+var _thbThaText = "บาท";
+var _thbEngText = "THB";
+var _usWithSymbolText = "US $";
+var _usdText = "USD";
+var _maxAliExpressPageLoadCount = 600;
+var _usdCurrencySelected = true;
+var _extensionEnabled = false;
+var _extensionName = "Replace USD with THB for AliExpress.com";
+var _exchangeRateAPI = "https://api.exchangeratesapi.io/latest?base=USD&symbols=THB";
