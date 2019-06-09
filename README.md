@@ -13,6 +13,12 @@ Firefox/Chrome Extension - Replaces US $xx.xx with xx.xx บาท for AliExpres
 - Auto update exchange rate when browser start.
 - Toggle enable/disable the extension by clicking toolbar icon.
 
+# Screenshots
+### Extension on Chrome Web Store
+![Search result page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/search-result-page.png)
+
+![Item detail page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/item-detail-page.png)
+
 # Installation
 
 ### For Firefox user
@@ -29,12 +35,6 @@ Firefox/Chrome Extension - Replaces US $xx.xx with xx.xx บาท for AliExpres
 - Install the extension
 - Set display currency on AliExpress.com to USD
 - Shopping
-
-# Screenshots
-### Extension on Chrome Web Store
-![Search result page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/search-result-page.png)
-
-![Item detail page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/item-detail-page.png)
 
 # License
 This project is licensed under the GPLv3 License - see the [LICENSE](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/LICENSE) file for details
