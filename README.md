@@ -33,6 +33,7 @@ Firefox/Chrome Extension - Replaces US $xx.xx with xx.xx บาท for AliExpres
 # Screenshots
 ### Extension on Chrome Web Store
 ![Search result page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/search-result-page.png)
+
 ![Item detail page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/item-detail-page.png)
 
 # License
