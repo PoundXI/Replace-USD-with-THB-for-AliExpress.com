@@ -1,7 +1,9 @@
-<img src="https://img.shields.io/badge/browser-firefox%20|%20chrome-blue.svg">
-<img src="https://img.shields.io/badge/license-GPL-green.svg">
-<img src="https://img.shields.io/badge/max--users-350-brightgreen.svg">
-<img src="https://img.shields.io/badge/status-discontinued-red.svg">
+<p align="left">
+	<img src="https://img.shields.io/badge/browser-firefox%20|%20chrome-blue.svg">
+	<img src="https://img.shields.io/badge/license-GPL-green.svg">
+	<img src="https://img.shields.io/badge/max--users-350-brightgreen.svg">
+	<img src="https://img.shields.io/badge/status-discontinued-red.svg">
+</p>
 
 # Replace USD with THB for AliExpress.com
 Firefox/Chrome Extension - Replaces US $xx.xx with xx.xx บาท for AliExpress.com
@@ -30,7 +32,7 @@ Firefox/Chrome Extension - Replaces US $xx.xx with xx.xx บาท for AliExpres
 
 # Screenshots
 ### Extension on Chrome Web Store
-![Search result page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/earch-result-page.png)
+![Search result page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/search-result-page.png)
 ![Item detail page](https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com/blob/master/screenshots/item-detail-page.png)
 
 # License
