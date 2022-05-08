@@ -43,5 +43,5 @@
 		"page": "html_options/options.html"
 	},
 
-	"permissions": ["storage", "management", "tabs"]
+	"permissions": ["storage", "tabs"]
 }

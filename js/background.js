@@ -1,14 +1,4 @@
 function onInstalled(details) {
-	function gotSelf(info) {
-		if (details.reason == "install") {
-			chrome.tabs.create({ url: `html_custom/installed.html?version=${info.version}` });
-		} else if (details.reason == "update") {
-			chrome.tabs.create({ url: `html_custom/updated.html?version=${info.version}` });
-		}
-	}
-
-	chrome.management.getSelf(gotSelf);
-
 	initConfig();
 	getEnabledStatusAndUpdateIcon();
 	updateExchangeRate();
