@@ -6,7 +6,7 @@ function onInstalled(details) {
 
 function onMessage(message) {
 	if (message.msg == "open_contribution_page") {
-		chrome.tabs.create({ url: "html_custom/contribution.html" });
+		// chrome.tabs.create({ url: "html_custom/contribution.html" });
 	} else if (message.msg == "update_icon") {
 		getEnabledStatusAndUpdateIcon();
 	}
