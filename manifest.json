@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Replace USD with THB for AliExpress.com",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"author": "PoundXI",
 	"homepage_url": "https://github.com/PoundXI/Replace-USD-with-THB-for-AliExpress.com",
 	"description": "Replaces US $xx.xx with xx.xx บาท for AliExpress.com",
