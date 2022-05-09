@@ -1,3 +1,6 @@
+importScripts('config.js');
+importScripts('utils.min.js');
+
 function onInstalled(details) {
 	initConfig();
 	getEnabledStatusAndUpdateIcon();
@@ -68,15 +71,15 @@ function getEnabledStatusAndUpdateIcon() {
 		}
 
 		// update icon
-		chrome.browserAction.setIcon({
+		chrome.action.setIcon({
 			path: _extensionEnabled ? {
-				48: "icons/icon48px.png"
+				48: "/icons/icon48px.png"
 			} : {
-				48: "icons/icon48px-gray.png"
+				48: "/icons/icon48px-gray.png"
 			}
 		});
 
-		chrome.browserAction.setTitle({
+		chrome.action.setTitle({
 			title: _extensionEnabled ?
 			`${_extensionName}\n*  [คลิกเพื่อ ปิดการใช้งาน ✗]` :
 			`${_extensionName}\n*  [คลิกเพื่อ เปิดการใช้งาน ✓]`
@@ -87,22 +90,25 @@ function getEnabledStatusAndUpdateIcon() {
 }
 
 function updateExchangeRate() {
+	// 2022-05-09 : Hardcode exchange rate, Because API requires access key.
+	chrome.storage.local.set({ thb2usdExchangeRate: 35.62 });
+
 	// get current USD to THB rate
-	$.getJSON(_exchangeRateAPI, function(data) {
-		$.each(data, function(key, value) {
-			value *= 1.03;
-			value = float2decimalpoints(value);
-			if (value > 0) {
-				// Update exchangerate to variable and storage
-				_thb2usdExchangeRate = value;
-				chrome.storage.local.set({ thb2usdExchangeRate: _thb2usdExchangeRate });
-				return false; //break each loop
-			}
-		});
-	});
+	// fetch(_exchangeRateAPI)
+	// 	.then(response => response.json())
+	// 	.then(json => {
+	// 		var value = json.value;
+	// 		value *= 1.03; // exchange risk rate
+	// 		value = float2decimalpoints(value);
+
+	// 		if (value > 0) {
+	// 			_thb2usdExchangeRate = float2decimalpointsjson.value * 1.03;
+	// 			chrome.storage.local.set({ thb2usdExchangeRate: _thb2usdExchangeRate });
+	// 		}
+	// 	});
 }
 
-chrome.browserAction.onClicked.addListener(onToolbarIconClicked);
+chrome.action.onClicked.addListener(onToolbarIconClicked);
 
 // fired when profile first starts up (except incognito profile)
 chrome.runtime.onStartup.addListener(onStartup);

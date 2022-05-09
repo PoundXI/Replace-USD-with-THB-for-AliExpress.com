@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Replace USD with THB for AliExpress.com",
 	"version": "4.0.0",
 	"author": "PoundXI",
@@ -11,7 +11,7 @@
 		"96": "icons/icon96px.png"
 	},
 
-	"browser_action": {
+	"action": {
 		"default_icon": "icons/icon48px-gray.png"
 	},
 
@@ -31,12 +31,7 @@
 	],
 
 	"background": {
-		"scripts": [
-			"3rdparty/jquery.min.js",
-			"js/config.js",
-			"js/utils.min.js",
-			"js/background.min.js"
-		]
+		"service_worker": "js/background.min.js"
 	},
 
 	"options_ui": {
